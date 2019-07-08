@@ -1,18 +1,6 @@
 #include "tools.h"
+#include "insertionSort.h"
 
-typedef unsigned long size_t;
-
-template<typename T>
-void insertion_sort(T* arr, size_t len)
-{
-    for(int i = 1; i < len; ++i)
-    {
-        for(int j = i; j > 0 && arr[j - 1] > arr[j]; --j)
-        {
-            swap(arr[j], arr[j - 1]);
-        }
-    }
-}
 
 int main()
 {

@@ -1,13 +1,5 @@
 #include "tools.h"
-
-template<typename T>
-void bubble_sort(T* arr, size_t len)
-{
-    for(int i = 0; i < len; ++i)
-        for(int j = len - 1; j > 0; --j)
-            if(arr[j - 1] > arr[j])
-                swap(arr[j - 1], arr[j]);
-}
+#include "bubble_sort.h"
 
 int main(int argc, char const *argv[])
 {

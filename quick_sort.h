@@ -1,3 +1,10 @@
+//
+// Created by soft01 on 19-7-8.
+//
+
+#ifndef TEST_QUICK_SORT_H
+#define TEST_QUICK_SORT_H
+
 #include "tools.h"
 
 /*
@@ -16,7 +23,7 @@ void quick_sort(T* arr, size_t low, size_t high)
             --h;
 
         while(arr[l] <= pat && l < h)
-        ++l;
+            ++l;
 
         if(l < h)
             swap(arr[l], arr[h]);
@@ -28,15 +35,4 @@ void quick_sort(T* arr, size_t low, size_t high)
 }
 
 
-int main(int argc, char const *argv[])
-{
-    int d3[] = {150,25,68,985,22,452,656,84,102,45,78,5,708,12,405,781,504,12,455};
-    size_t len = sizeof(d3)/sizeof(d3[0]) - 1;
-    quick_sort(d3, 0, len);
-    //partition(d3, 0, len);
-    //quicksort(d3, 0, len);
-    arr_print(d3, len);
-    return 0;
-}
-
-
+#endif //TEST_QUICK_SORT_H
