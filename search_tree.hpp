@@ -1,7 +1,9 @@
 //
 // Created by soft01 on 19-7-8.
 //
-
+/*
+ * 二叉查找树
+ */
 #ifndef TEST_SEARCH_TREE_HPP
 #define TEST_SEARCH_TREE_HPP
 
@@ -45,18 +47,18 @@ public:
             if (val >= iter->val) {
                 if (iter->right == NULL) {
                     iter->right = tmp;
-                    break;
+                    return true;
                 }
                 iter = iter->right;
             } else if (val < iter->val) {
                 if (iter->left == NULL) {
                     iter->left = tmp;
-                    break;
+                    return true;
                 }
                 iter = iter->left;
             }
-
         }
+        return false;
     }
 
     void first()

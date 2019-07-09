@@ -1,5 +1,5 @@
 #include "tools.h"
-#include "merge_sort.hpp"
+#include "merge_sort.h"
 
 
 int main(int argc, char const *argv[])

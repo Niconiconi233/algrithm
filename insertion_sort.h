@@ -1,9 +1,12 @@
 //
 // Created by soft01 on 19-7-8.
 //
+/*
+ * 插入排序
+ */
 
-#ifndef TEST_INSERTIONSORT_H
-#define TEST_INSERTIONSORT_H
+#ifndef TEST_INSERTION_SORT_H
+#define TEST_INSERTION_SORT_H
 
 using size_t = unsigned long;
 
@@ -20,4 +23,4 @@ void insertion_sort(T* arr, size_t len)
     }
 }
 
-#endif //TEST_INSERTIONSORT_H
+#endif //TEST_INSERTION_SORT_H

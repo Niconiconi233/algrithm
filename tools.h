@@ -40,9 +40,6 @@ T min(const T& lhs, const T& rhs)
     return lhs < rhs ? lhs : rhs;
 }
 
-void bezero(void* data, size_t len)
-{
-    memset(data, 0, len);
-}
+
 
 #endif

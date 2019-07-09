@@ -1,6 +1,9 @@
 //
 // Created by soft01 on 19-7-8.
 //
+/*
+ * 快排
+ */
 
 #ifndef TEST_QUICK_SORT_H
 #define TEST_QUICK_SORT_H

@@ -2,10 +2,13 @@
 // Created by soft01 on 19-7-8.
 //
 
-#ifndef TEST_MERGE_SORT_HPP
-#define TEST_MERGE_SORT_HPP
+#ifndef TEST_MERGE_SORT_H
+#define TEST_MERGE_SORT_H
 
 #include "tools.h"
+/*
+ * 归并排序
+ */
 
 template<typename T>
 void merge(T* arr, size_t low, size_t mid, size_t high)
@@ -45,4 +48,4 @@ void merge_sort(T* arr, size_t low, size_t high)
 
 
 
-#endif //TEST_MERGE_SORT_HPP
+#endif //TEST_MERGE_SORT_H
