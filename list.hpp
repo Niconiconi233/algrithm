@@ -111,6 +111,26 @@ public:
         return true;
     }
 
+    void reverse()
+    {
+        node<T>* curr;
+        node<T>* front;
+        node<T>* end;
+        if(head_->next == nullptr)
+            return;
+        curr = head_->next;
+        front = head_->next;
+        end = head_;
+        end->next = nullptr;
+        do{
+            front = front->next;
+            curr->next = end;
+            end = curr;
+            curr = front;
+        }while(front);
+        head_ = end;
+    }
+
     size_t find(const T& val)
     {
         if(size_ == 0)

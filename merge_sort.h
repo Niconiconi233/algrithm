@@ -47,5 +47,4 @@ void merge_sort(T* arr, size_t low, size_t high)
 }
 
 
-
 #endif //TEST_MERGE_SORT_H
